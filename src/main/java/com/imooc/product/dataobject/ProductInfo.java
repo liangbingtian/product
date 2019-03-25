@@ -23,7 +23,7 @@ public class ProductInfo {
   private BigDecimal productPrice;
 
   // 商品库存
-  private String productStock;
+  private Integer productStock;
 
   // 商品描述
   private String productDescription;

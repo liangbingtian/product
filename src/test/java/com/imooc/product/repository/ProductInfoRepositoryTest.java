@@ -3,6 +3,7 @@ package com.imooc.product.repository;
 import static org.junit.Assert.*;
 
 import com.imooc.product.dataobject.ProductInfo;
+import java.util.Arrays;
 import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
@@ -24,6 +25,12 @@ public class ProductInfoRepositoryTest {
   @Test
   public void findByProductStatus() {
     List<ProductInfo> productInfoList = productInfoRepository.findByProductStatus(1);
+    Assert.assertTrue(productInfoList.size() > 0);
+  }
+
+  @Test
+  public void findByProductIdIn() {
+    List<ProductInfo> productInfoList = productInfoRepository.findByProductIdIn(Arrays.asList("157875196366160022","157875227953464068"));
     Assert.assertTrue(productInfoList.size() > 0);
   }
 }
