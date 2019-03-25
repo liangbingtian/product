@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * liangbingtian 2019/3/5 下午7:28
+ * 仅仅为了练习合并和撤销合并
  */
 @RestController
 @RequestMapping("/product")
