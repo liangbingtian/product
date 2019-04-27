@@ -1,5 +1,6 @@
 package com.imooc.product.controller;
 
+import com.imooc.product.common.ProductInfoOutput;
 import com.imooc.product.dto.CartDTO;
 import com.imooc.product.VO.ProductInfoVO;
 import com.imooc.product.VO.ProductVO;
@@ -71,8 +72,9 @@ public class ProductController {
    * 获取订单所需要的商品list
    */
   @PostMapping("/listForOrder")
-  public List<ProductInfo> listForOrder(@RequestBody List<String> productIdList) {
-    return productService.findList(productIdList);
+  public List<ProductInfoOutput> listForOrder(@RequestBody List<String> productIdList) {
+//    return productService.findList(productIdList);
+    return null;
   }
 
   @PostMapping("/decreaseStock")
