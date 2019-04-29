@@ -1,6 +1,5 @@
 package com.imooc.product.service;
 
-import static org.junit.Assert.*;
 
 import com.imooc.product.ProductApplicationTests;
 import com.imooc.product.dataobject.ProductCategory;
