@@ -3,6 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+
+  <parent>
+    <groupId>com.imooc</groupId>
+    <artifactId>product</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>product-client</artifactId>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -23,15 +33,6 @@
 
   </dependencies>
 
-  <parent>
-        <groupId>com.imooc</groupId>
-        <artifactId>product</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
-
-    <groupId>com.imooc</groupId>
-    <artifactId>product-client</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
 
     
 </project>
